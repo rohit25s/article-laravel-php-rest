@@ -11,6 +11,11 @@ class Article extends Model
 
     protected $fillable = ['title', 'description','category', 'author','views'];
 
+    public function Author()
+    {
+        return $this->belongsTo(Author::class);
+    }
+
     public function scopeHasViewsGreaterThan($query, $val){
         return $query->where('views', '>', $val);
     }

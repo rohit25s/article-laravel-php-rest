@@ -18,7 +18,8 @@ class CreatearticlesTable extends Migration
             $table->string("title");
             $table->text('category') ;
             $table->text('description');
-            $table->text('author');
+            $table->unsignedBigInteger('author_id');
+            $table->foreign('author_id')->references('id')->on('authors');
             $table->integer('views');
             $table->timestamps();
         });

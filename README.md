@@ -1,8 +1,13 @@
-## simple articles restful apis using laravel framework
+# simple E-Articles publishing website using restful apis based on Laravel 8 framework
+##Features
+- Two resource models __Article__ and __Author__
+- Restful apis (for CRUD operations)
+- One-to-many relationship between authors and articles
 
-- create two resource articles and author
-- restful apis
-
+####Article Schema 
+ id, title, category, description, author_id, views
+####Author Schema
+id, name
 
 ## About Laravel
 
@@ -19,7 +24,7 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 
-## DEMO
+## Example
 Home
 ![alt text](https://github.com/rohit25s/article-laravel-php-rest/blob/master/images/home.png?raw=true)
 
