@@ -28,8 +28,8 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        $article = Article::create($request->only(['title', 'description','category', 'Article','views']));
-        return new ArticleResource($article);
+        Article::create($request->only(['title', 'description','category', 'author','views']));
+        return view('home')->with('successMsg', 'Article Created');
     }
 
     /**

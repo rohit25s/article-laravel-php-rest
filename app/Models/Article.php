@@ -10,4 +10,8 @@ class Article extends Model
     use HasFactory;
 
     protected $fillable = ['title', 'description','category', 'author','views'];
+
+    public function scopeHasViewsGreaterThan($query, $val){
+        return $query->where('views', '>', $val);
+    }
 }
