@@ -1,12 +1,13 @@
 # simple E-Articles publishing website using restful apis based on Laravel 8 framework
-##Features
+## Features
 - Two resource models __Article__ and __Author__
 - Restful apis (for CRUD operations)
 - One-to-many relationship between authors and articles
+- faker to seed table with random data maintaining the one-to-many constraint.
 
-####Article Schema 
+#### Article Schema 
  id, title, category, description, author_id, views
-####Author Schema
+#### Author Schema
 id, name
 
 ## About Laravel
