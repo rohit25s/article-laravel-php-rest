@@ -19,4 +19,18 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 
+## DEMO
+Home
+![alt text](https://github.com/rohit25s/article-laravel-php-rest/blob/master/images/home.png?raw=true)
 
+Register
+![alt text](https://github.com/rohit25s/article-laravel-php-rest/blob/master/images/register.png?raw=true)
+
+List all articles
+![alt text](https://github.com/rohit25s/article-laravel-php-rest/blob/master/images/list_articles.png?raw=true)
+
+Create an Article
+![alt text](https://github.com/rohit25s/article-laravel-php-rest/blob/master/images/post.png?raw=true)
+
+Result
+![alt text](https://github.com/rohit25s/article-laravel-php-rest/blob/master/images/posted.png?raw=true)
