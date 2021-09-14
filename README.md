@@ -38,8 +38,9 @@ List all articles
 Create an Article
 ![alt text](https://github.com/rohit25s/article-laravel-php-rest/blob/master/images/post.png?raw=true)
 
-Create an Author
-![alt text](https://github.com/rohit25s/article-laravel-php-rest/blob/master/images/author.png?raw=true)
-
 Result
 ![alt text](https://github.com/rohit25s/article-laravel-php-rest/blob/master/images/posted.png?raw=true)
+
+Create an Author
+![alt text](https://github.com/rohit25s/article-laravel-php-rest/blob/master/images/author.PNG?raw=true)
+
