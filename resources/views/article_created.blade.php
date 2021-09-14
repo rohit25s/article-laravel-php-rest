@@ -13,8 +13,11 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('You are logged in!') }}
+ 
+                    <center> <h1>{{ $successMsg }} </h1>
+                        <h3><b>ID:</b>{{ $id }} </h3>
+                        <h3><b>Title:</b>{{ $title }} </h3><br>
+                    <a href = "/"><h4>Go Back</h4></a> </center>
                 </div>
             </div>
         </div>

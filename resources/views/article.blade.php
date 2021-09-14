@@ -27,7 +27,7 @@
 
                             <div class="form-group row">
                                 <label for="author_id" class="col-md-4 col-form-label text-md-right">{{ __('Author_id') }}</label>
-
+                                
                                 <div class="col-md-6">
                                     <input id="author_id" type="number" class="form-control @error('author_id') is-invalid @enderror" name="author_id" value="{{ old('author_id') }}" required autocomplete="author_id">
 
@@ -36,7 +36,8 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                     @enderror
-                                </div>
+                                </div><br>
+                                <a href="{{ url('/create_author') }}" class="ml-2 text-lg-right dark:text-gray-400 underline">Create a new author</a>
                             </div>
 
                             <div class="form-group row">

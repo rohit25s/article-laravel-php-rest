@@ -30,8 +30,9 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        Article::create($request->only(['title', 'description','category', 'author_id','views']));
-        return view('home')->with('successMsg', 'Article Created');
+        $insert = Article::create($request->only(['title', 'description','category', 'author_id','views']));
+        //return view('home')->with('successMsg', strval($insert->id));
+        return view('article_created')->with('successMsg', 'Article Created')->with('id', strval($insert->id))->with('title', strval($insert->title));
     }
 
     /**

@@ -2,4 +2,4 @@
 .env
 .phpunit.result.cache
 node_modules
-vendor
+vendor/
