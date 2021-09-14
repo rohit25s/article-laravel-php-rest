@@ -26,12 +26,12 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="author" class="col-md-4 col-form-label text-md-right">{{ __('Author') }}</label>
+                                <label for="author_id" class="col-md-4 col-form-label text-md-right">{{ __('Author_id') }}</label>
 
                                 <div class="col-md-6">
-                                    <input id="author" type="text" class="form-control @error('author') is-invalid @enderror" name="author" value="{{ old('author') }}" required autocomplete="author">
+                                    <input id="author_id" type="number" class="form-control @error('author_id') is-invalid @enderror" name="author_id" value="{{ old('author_id') }}" required autocomplete="author_id">
 
-                                    @error('author')
+                                    @error('author_id')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

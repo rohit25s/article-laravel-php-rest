@@ -30,7 +30,7 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        Article::create($request->only(['title', 'description','category', 'author','views']));
+        Article::create($request->only(['title', 'description','category', 'author_id','views']));
         return view('home')->with('successMsg', 'Article Created');
     }
 
@@ -54,7 +54,7 @@ class ArticleController extends Controller
      */
     public function update(Request $request, Article $article)
     {
-        $article->update($request->only(['title', 'description','category', 'Article','views']));
+        $article->update($request->only(['title', 'description','category', 'author_id','views']));
     }
 
     /**

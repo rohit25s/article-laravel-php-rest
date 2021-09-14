@@ -31,5 +31,17 @@ Route::get('/create_article', function () {
     return view('article');
 });
 
+Route::get('/create_author', function () {
+    return view('author');
+});
+
+
 Route::resource("article", ArticleController::class);
 Route::resource("author", AuthorController::class);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
