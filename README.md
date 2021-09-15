@@ -5,11 +5,29 @@
 - One-to-many relationship between authors and articles
 - faker to seed table with random data maintaining the one-to-many constraint.
 
-#### Article Schema 
+### Article Schema 
  id, title, category, description, author_id, views
-#### Author Schema
+### Author Schema
 id, name
 
+## How To Run
+- clone project
+- copy __.env.example__ to __.env__
+- setup database properties as per your preference in __.env__ file
+- run below commands 
+``` 
+composer install
+composer require laravel/ui
+php artisan ui vue --auth
+
+npm install && npm run dev
+
+# to migrate database
+php artisan migrate
+
+# start server
+php artisan serve
+```
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
