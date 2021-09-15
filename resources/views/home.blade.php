@@ -13,8 +13,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
+                    
                     {{ __('You are logged in!') }}
+                    <a href = "/"><h4>Go Back</h4></a> </center>
                 </div>
             </div>
         </div>
